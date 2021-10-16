@@ -1,0 +1,24 @@
+//миксины и переменные
+
+
+
+
+@import "./variables.scss";
+@import "./header.scss";
+@import "./firstscreen.scss";
+
+
+
+@import "./fonts.scss";
+@import "./reset.scss";
+
+
+html{
+    font-family: 'Raleway', sans-serif;
+}
+.container {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+}
+
