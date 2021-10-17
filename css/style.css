@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap");
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 100;
@@ -166,7 +166,7 @@
 
 .firstscreen {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   padding: 215px 0 120px;
   background: url(../img/background/firstscreen.jpg);
   background-repeat: no-repeat;
@@ -187,6 +187,7 @@
 @media (max-width: 575px) {
   .firstscreen {
     padding: 103px 0 52px;
+    min-height: 0;
   }
 }
 .firstscreen::after {
@@ -304,6 +305,145 @@
           box-shadow: 4px 4px 30px #FF4343;
 }
 
+.benefits {
+  padding: 116px 0 43px;
+}
+@media (max-width: 1024px) {
+  .benefits {
+    padding: 87px 0 22px;
+  }
+}
+@media (max-width: 575px) {
+  .benefits {
+    padding: 49px 0 35px;
+  }
+}
+
+.benefits-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -15px;
+}
+@media (max-width: 1024px) {
+  .benefits-wrapper {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+@media (max-width: 575px) {
+  .benefits-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.benefits-card {
+  margin: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  max-width: 30%;
+  margin-bottom: 91px;
+}
+@media (max-width: 1024px) {
+  .benefits-card {
+    margin: 0 10px;
+    margin-bottom: 51px;
+    max-width: 40%;
+  }
+}
+@media (max-width: 575px) {
+  .benefits-card {
+    min-width: 280px;
+    margin: 0 0 50px;
+  }
+}
+
+.benefits-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 58px;
+}
+@media (max-width: 1024px) {
+  .benefits-image {
+    width: 68px;
+    height: 68px;
+    margin-bottom: 47px;
+  }
+}
+@media (max-width: 575px) {
+  .benefits-image {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 40px;
+  }
+}
+.benefits-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.benefits-title {
+  font: 900 24px "Raleway", sans-serif;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #2D3033;
+  margin-bottom: 48px;
+}
+@media (max-width: 1024px) {
+  .benefits-title {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 575px) {
+  .benefits-title {
+    margin-bottom: 10px;
+  }
+}
+
+.benefits-desc p {
+  font: 400 18px "Raleway", sans-serif;
+  line-height: 21px;
+  color: #6C7279;
+}
+@media (max-width: 1024px) {
+  .benefits-desc p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -321,4 +461,20 @@ html {
   max-width: 1170px;
   margin: auto;
   padding: 0 15px;
+}
+@media (max-width: 1024px) {
+  .container {
+    max-width: 984px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
 }
