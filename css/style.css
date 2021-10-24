@@ -808,6 +808,121 @@
      object-fit: cover;
 }
 
+.start {
+  padding: 138px 0 114px;
+}
+@media (max-width: 1024px) {
+  .start {
+    padding: 98px 0 78px;
+  }
+}
+@media (max-width: 575px) {
+  .start {
+    padding: 57px 0 45px;
+  }
+}
+
+.start-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.start-title {
+  font: 700 30px "Raleway", sans-serif;
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+@media (max-width: 1024px) {
+  .start-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 575px) {
+  .start-title {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 28px;
+    max-width: 280px;
+  }
+}
+
+.start-decs {
+  font: 700 30px "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 54px;
+  text-transform: uppercase;
+}
+@media (max-width: 1024px) {
+  .start-decs {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 46px;
+  }
+}
+@media (max-width: 575px) {
+  .start-decs {
+    font-size: 13px;
+    line-height: 15px;
+    margin-bottom: 16px;
+    max-width: 280px;
+  }
+}
+
+.start-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 369px;
+  height: 78px;
+  font: 900 24px "Raleway", sans-serif;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #FF4343;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+@media (max-width: 1024px) {
+  .start-link {
+    width: 314px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+@media (max-width: 575px) {
+  .start-link {
+    width: 279px;
+    height: 78px;
+  }
+}
+.start-link:hover {
+  background: #E71414;
+}
+.start-link:active {
+  background: #FF4343;
+  -webkit-box-shadow: 4px 4px 30px #FF4343;
+          box-shadow: 4px 4px 30px #FF4343;
+}
+
 * {
   margin: 0;
   padding: 0;
