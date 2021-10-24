@@ -144,10 +144,21 @@
     align-items: center;
     width: 39px;
     height: 39px;
+    border: 1px solid #C6CBCD;
     transition: 0.2s;
+    & i{
+        font-size: 18px;
+        color: #C6CBCD;
+        transition: 0.2s;
+    }
     &:hover{
+        transform: scale(1.2);
+        border: 1px solid #FF4343;
+    }
+    &:hover i{
         cursor: pointer;
-        background-color: #FF4343;
+        color: #FF4343;
+        transform: scale(1.1);
     }
     @media (max-width: 1024px) {
         width: 33px;
@@ -157,11 +168,4 @@
         width: 40px;
         height: 40px;
     }
-    & img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-
 }
