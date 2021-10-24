@@ -116,8 +116,9 @@
         &::after{
             content: '';
             display: block;
-            height: 0px;
+            transform: scale(0);
             background-color: #BABBC5;
+            height: 3px;
             width: 100%;
             position: absolute;
             top: 54px;
@@ -128,7 +129,7 @@
             cursor: pointer;
         }
         &:hover::after{
-            height: 3px;
+            transform: scale(1);
         }
         &:active{
             color: $nav-active;
